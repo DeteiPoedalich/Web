@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+</head>
+<body style =" margin:0 auto ;border: 2px;background-color: rgb(146, 146, 146);">    
+    <header style = "padding: 20px 20px 20px;background-color: rgb(54, 54, 54); border-bottom: 5px solid orange;" >   
+        <b style = "font-size: 30px; color: white;font-family:Arial;position: absolute;">My CV</b>  
+            <nav>
+                <a style="font-size: 20px;color:white;margin-left: 55%;font-family:Arial; text-decoration: none;" href="#Aboutme">About me</a>
+                <a style="font-size: 20px;color:white;margin-left: 4%;font-family:Arial ; text-decoration: none;" href="#Experience" >Experience</a>
+                <a style="font-size: 20px;color:white;margin-left: 4%;font-family:Arial ; text-decoration: none;" href="#Languages" >Languages</a>
+                <a style="font-size: 20px;color:white;margin-left: 4%;font-family:Arial ; text-decoration: none;" href="#ContactInformation" >Contact information</a>
+            </nav>            
+        </header>      
+        <main style="width: 50%; margin: 2% auto;">
+            <div style ="text-align: center;">
+                <img style="width: 25%;border-radius:80% ;border:5px solid orange;" src="bibs.jpg" alt="image" >
+                <p style = "font-size: 20px;font-family:Arial ; ">Alexander Sharoiko</p>               
+            </div>
+            <div style ="text-align: center;">
+            <a id="Aboutme"></a>
+            <h2 style="font-family:Arial ;">About me</h2>
+            <p style="font-family:Arial ;">Currently I am a student at the Belarusian-Russian<br>University. I always like to learn something new about<br>the IT. I don`t have much experience in the IT field,<br> but I`m trying my best to become a qualified programmer. </p>           
+            </div>
+            <div style ="text-align: center;">
+                <a id="Experience"></a>
+                <h2 style="font-family:Arial ;">Experience</h2>
+                <h3 style="font-family:Arial ;">Skills</h3>
+                <p style="font-family:Arial ;">C#, 1.5 year</p>
+                <p style="font-family:Arial ;">HTML, 1 week</p>
+                <h3 style="font-family:Arial ;">Code examples</h3>
+            </div>
+                <div style = "margin-left:35%">
+            <code> <pre>
+static int[,] input(int[,] array)
+{
+    int[,] array1 = new int[5, 3];
+    Random random = new Random();
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0;j < 3;j++)
+        {
+            array[i, j] = random.Next(15);
+                            
+        }  
+    }
+    return array1;
+}
+static void output(int[,]array)
+{
+    for (int i = 0; i < 5; i++)
+    {
+    for (int j = 0; j < 3; j++)
+    {
+    Console.Write(array[i, j] + " ");
+    }
+    Console.WriteLine();
+    }
+}
+static int[,] Array(int[,] array)
+{
+    int max = 0;
+    int n=0, m=0;
+    for(int i = 0; i 5; i++) 
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (max < array[i, j])
+            {
+                max = array[i, j];
+                n = i; m=j; 
+            }
+        }
+    }
+    output1(n, m, max);
+    return array;
+}
+static void output1(int n,int m,int max)
+{
+    Console.WriteLine("Максимальный элемент- " + max);
+    Console.WriteLine("Номер строки- "+n);
+    Console.WriteLine("Номер сторлбца- "+m);   
+}   
+static void Main(string[] args)
+{
+    int[,] array = new int[5, 3];
+    input(array);
+    output(array);
+    Array(array);
+}
+</pre> </code>
+            </div>
+        <div style ="text-align: center;">
+            <h3 style="font-family:Arial ;">Job experience</h3>
+            <p style="font-family:Arial ;">Project:My CV</p>
+        </div>
+        <div style ="text-align: center;">
+            <a id="Languages"></a>
+            <h2 style="font-family:Arial ;">Languages</h2>
+            <p style="font-family:Arial ;">English, Level:B1</p>
+            <p style="font-family:Arial ;">Russian</p>
+        </div>
+            </main>
+            <footer style = "padding:1% 1%;background-color: rgb(54, 54, 54); border-top: 5px solid orange; text-align: center;">
+                <a id="ContactInformation"></a>
+                <b style="font-size: 20px;color:white;font-family:Arial ;">+375445526040</b>
+                  <b style="font-size: 20px;color:white;padding-left:75px;font-family:Arial  ;">himanru3@gmail.com</b>
+            </footer>      
+</body>
+</html>
+ 
