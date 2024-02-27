@@ -1,2 +1,2 @@
 # Web
-https:/DeteiPoedalich.github.io/Web/cv
+ https:/DeteiPoedalich.github.io/Web/cv
